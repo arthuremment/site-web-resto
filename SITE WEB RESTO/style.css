@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: rgb(160, 59, 1);
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 3;
+}
+.logo{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: none;
+
+}
+.logo span{
+  color: var(--main-color);
+}
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar li a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+.navbar button{
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    margin-top: -10px;
+    margin-left: 25px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.navbar button a{
+    text-decoration: none;
+    margin: 0;
+    font-weight: 800;
+    color: #fff;
+}
+.navbar button:hover{
+    background-color: rgb(138, 53, 4);
+    transition: 0.3s ease-out;
+}
+.navbar li a:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+.navbar li span{
+    color: var(--main-color);
+    font-size: 1em;
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%), url(./Images/resto5.jpg);
+    background-size: cover;
+    background-position: bottom;
+    
+}
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center;
+}
+.banniere .contenu h2{
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.contenu p:nth-child(2){
+    color: #FFF;
+    font-size: 1.2em;
+}
+.btn1{
+    font-size: 1em;
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: 0,5s ease;
+
+}
+.btn2{
+    font-size: 1em;
+    color: #fff;
+    background-color: #2a4963;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: 0,5s ease;
+
+}
+.btn1:hover{
+    letter-spacing: 4px;
+}
+.apropos{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .row1, .row .row2{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+.row .row1 h2{
+    margin-bottom: 20px;
+}
+.titre-texte{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+.titre-texte span{
+    color: var(--main-color);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.row .row2 img{
+    position: relative;
+    height: 450px;
+    width: 600px;
+}
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu{
+    padding: 80px;
+}
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .contenu .box{
+    width: 350px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.5);
+
+}
+.menu .contenu .box .imgbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .contenu .box .imgbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.menu .contenu .box .texte{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+.menu .contenu .box .texte h3{
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px;
+
+}
+.chefs{
+    padding-top: 100px;
+}
+.chefs .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.chefs .contenu .box{
+    width: 250px;
+    margin: 15px;
+}
+.chefs .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.chefs .contenu .box h3{
+    color: #111;
+    font-weight: 400;
+    text-align: center;
+}
+
+.avis{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%),url(./Images/resto1.jpg), no-repeat;
+    background-size: contain;
+    margin-top: 100px;
+    padding-top: auto;
+    padding-bottom: 50px;
+}
+.avis .titre{
+    padding-top: 70px;
+    color: #fff;
+}
+.avis .titre-texte{
+    color: #fff;
+}
+.avis .titre p{
+    color: #fff;
+}
+.avis .contenu{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.avis .contenu .box{
+    width: 340px;
+    margin: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px;
+}
+.avis .contenu .box .imgbox{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.avis .contenu .box .imgbox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+.avis .contenu .box .texte{
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    line-height: 27px;
+
+}
+.avis .contenu .box .texte h3{
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600px;
+}
+
+.contact{
+    background:  url(./Images/resto2.jpg);
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+    padding: 75px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactform{
+    padding: 75px 50px 50px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    min-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.contactform .inputboite input, 
+.contactform .inputboite textarea{
+    width: 100%;
+    border: 1px solid #555;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px;
+    resize: none;
+}
+.contactform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--main-color);
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(222, 222, 222);
+    text-align: center;
+}
+footer p{
+    color: #333;
+}
+footer a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+header.sticky{
+    background-color: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+header.sticky .logo,
+header.sticky .navbar li a{
+    color: #111;
+}
+header.sticky .navbar li a:hover{
+    color: var(--main-color);
+}
+
+@media (max-width: 991px) {
+
+    header, header.sticky{
+        padding: 10px 20px;
+    }
+    header .navbar li{
+        margin-left: 0px;
+    }
+    header .navbar li a{
+        font-size: 1.6em;
+        font-weight: 300;
+        color: #111;
+    }
+    .navbar{
+        display: none;
+    }
+    section{
+        padding: 20px;
+    }
+
+    .row .row2, .row .row1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .row .row1{
+        padding-bottom: 25px;
+    }
+    .row{
+        flex-direction: column;
+        padding: 5px;
+        display: flex;
+        justify-content: center; 
+    }
+    .navbar.active{
+        width: 100%;
+        height: 40%;
+        position: fixed;
+        top: 0px;
+        padding: 35px 0 25px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    }
+    .navbar.active li a{
+        font-size: 1.2em;
+        line-height: 30px;
+    }
+    .navbar.active button{
+        margin: 10px 0;
+    }
+
+    .toggleMenu{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url(./Images/menu.svg);
+        cursor: pointer;
+        filter: invert(1);
+    }
+    .toggleMenu.active{
+        background-image: url(./Images/close.svg);
+    } 
+    header.sticky .toggleMenu{
+        filter: invert(0);
+    }
+}
+
+@media (max-width: 550px){
+    .banniere .contenu h2{
+        font-size: 2em;
+    }
+    .banniere .contenu p{
+        font-size: 1.2em;
+    }
+    .apropos .row .row1 p{
+        font-size: 1em;
+    }
+}
